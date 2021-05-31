@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vertcoin</title>
+    <link>https://vertcoin.org/</link>
+    <description>Recent content on Vertcoin</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://vertcoin.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Community</title>
+      <link>https://vertcoin.org/community/</link>
+      <pubDate>Fri, 12 Jan 2018 01:30:50 +0000</pubDate>
+      
+      <guid>https://vertcoin.org/community/</guid>
+      <description>a { color: #a5a6a7; }    Vertcoin Talk    Twitter    Discord    r/Vertcoin    r/VertcoinMining    Github    Wikipedia    Medium    Vertcoin Statistics    Insight Explorer   </description>
+    </item>
+    
+    <item>
+      <title>Download</title>
+      <link>https://vertcoin.org/download-miner/</link>
+      <pubDate>Fri, 12 Jan 2018 01:30:50 +0000</pubDate>
+      
+      <guid>https://vertcoin.org/download-miner/</guid>
+      <description>One-Click Miner Download One-Click Miner - (Github - Latest Release)  &amp;copy;2014-2020 The Vertcoin Core developers  </description>
+    </item>
+    
+    <item>
+      <title>Download</title>
+      <link>https://vertcoin.org/download-wallet/</link>
+      <pubDate>Fri, 12 Jan 2018 01:30:50 +0000</pubDate>
+      
+      <guid>https://vertcoin.org/download-wallet/</guid>
+      <description>Vertcoin Wallet Download the Vertcoin Wallet v0.17.1 (Verthash)
+ (Windows) (Mac) (Linux) (All Releases)    </description>
+    </item>
+    
+    <item>
+      <title>Get Started</title>
+      <link>https://vertcoin.org/get-started/</link>
+      <pubDate>Fri, 12 Jan 2018 01:30:50 +0000</pubDate>
+      
+      <guid>https://vertcoin.org/get-started/</guid>
+      <description>.container { text-align: center; }  1: Inform yourself Vertcoin is different than what you know and use every day. Before you start using Vertcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls.
+2 : Choose your wallet Free Vertcoin wallets are available for all major operating systems and devices to serve a variety of your needs. For example, you can install an app on your mobile device for everyday use or you can have a wallet only for online payments on your computer.</description>
+    </item>
+    
+    <item>
+      <title>Mining Setup</title>
+      <link>https://vertcoin.org/mining-setup/</link>
+      <pubDate>Fri, 12 Jan 2018 01:30:50 +0000</pubDate>
+      
+      <guid>https://vertcoin.org/mining-setup/</guid>
+      <description>p img { max-width: 440px; margin-bottom: 28px; } .content-container img { width: 100%; max-width: 440px; }  Download One-Click Miner - (Github - Latest Release)
+
+Create Password Start Mining 
+
+Not working, need help? Head over to Vertcoin Discord. </description>
+    </item>
+    
+    <item>
+      <title>Specifications</title>
+      <link>https://vertcoin.org/specs-explained/</link>
+      <pubDate>Fri, 12 Jan 2018 01:30:50 +0000</pubDate>
+      
+      <guid>https://vertcoin.org/specs-explained/</guid>
+      <description>.content-container { display: flex; justify-content: space-between; max-width: 1124px; } img { max-width: 53px; }  
+Built using Bitcoin as a base, receiving any future Bitcoin updates upon specification release confirmation.
+Vertcoin was one of the first coins to lock in and activate SegWit. It was activated May 7, 2017  
+Has the same block time (2.5 mins) as Litecoin and same supply of coins (84,000,000 coins). These changes are well within scaling limits of blockchain growth and orphan generation (&amp;gt;1:30)</description>
+    </item>
+    
+    <item>
+      <title>What is Vertcoin?</title>
+      <link>https://vertcoin.org/bitcoin-vs-vertcoin/</link>
+      <pubDate>Fri, 12 Jan 2018 01:30:50 +0000</pubDate>
+      
+      <guid>https://vertcoin.org/bitcoin-vs-vertcoin/</guid>
+      <description>  
+The video above is a good crash course on Vertcoin. Give it a watch! Vertcoin was created as a graphics card mined version of Bitcoin in Jan 2014 as response to Litecoin succumbing to ASIC control. It is important that everyday people with desktop computers can mine the network so that network hashrate is as decentralized as possible. </description>
+    </item>
+    
+  </channel>
+</rss>
