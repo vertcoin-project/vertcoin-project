@@ -998,7 +998,7 @@ h4 svg {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .wrapper h3 {
         font-size: 23px;
         font-size: 34px;
@@ -2577,12 +2577,21 @@ section.separator-greenLine:before {
     background-size: cover;
 }
 
+.mobileNav {
+    list-style: none;
+    display: inline-flex;
+    margin-top: 34px;
+}
 
+.mobileNav li {
+    margin-left: 29px;
+    color: #a5a6a7;
+}
 
 
 .hideMobile {}
 
-@media screen and (max-width: 767px) {
+@media screen and (width <= 767px) {
     .hideMobile {
         display: none !important;
     }
@@ -2592,7 +2601,8 @@ section.separator-greenLine:before {
 
 .hideDesktop {}
 
-@media screen and (min-width: 767px) {
+
+@media screen and (width > 767px) {
     .hideDesktop {
         display: none !important;
     }
@@ -3353,17 +3363,6 @@ tspan {
     height: 51px;
     width: auto;
     max-width: none;
-}
-
-.mobileNav {
-    list-style: none;
-    display: inline-flex;
-    margin-top: 34px;
-}
-
-.mobileNav li {
-    margin-left: 29px;
-    color: #a5a6a7;
 }
 
 
