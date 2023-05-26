@@ -2612,25 +2612,55 @@ section.separator-greenLine:before {
     display: flex;
     align-items: center;
     gap: 32px;
-    margin-right: 32px;
+    /* margin-right: 32px; */
 }
 
-.burgerMenu :hover{
-    cursor: pointer;
+.burgerMenu {
+    border: 2px solid;
+}
+
+.burgerMenu:hover{
     background-color: #048652;
+    cursor: pointer;
+}
+
+.burgerMenu.activeBurger {
+    background-color: red;
+}
+
+.burgerListWrapper {
+    display: none;
+}
+
+
+
+.showBurgerListWrapper {
+    display: block;
 }
 
 .burgerList {
     text-align: left;
+    list-style: none;
+    width: full;
     position: absolute;
+    margin-top: 20px;
     right: 0;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 8px;
     background-color: #121212;
-    padding: 8px 12px 8px 4px;
+    padding: 8px 12px 8px 8px;
+    user-select: none;
+    z-index: 9999;
 }
+
+
+.burgerList > *:hover {
+    color: rgb(128, 137, 148);
+    cursor: pointer;
+}
+
 
 .hideDesktopNav {}
 

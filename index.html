@@ -132,25 +132,38 @@
                         <a class="downloadButton hideMobile" href="/download-wallet">Download Wallet</a>
                         <div class="hideMobile">
                             <div>
-                                <div class="burgerMenu">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
-                                    viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                                </svg>
-                            </div>
-                                <div class="burgerList">
-                                    <div>Mining Setup</div>
-                                    <div>Bitcoin Comparison</div>
-                                    <div>Community</div>
-                                    <div>Specifications</div>
+                                <div id="burgerScript" class="burgerMenu">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                    </svg>
+                                </div>
+                                <div class="burgerListWrapper">
+                                    <div class="burgerList">
+                                        <div>Mining Setup</div>
+                                        <div>Bitcoin Comparison</div>
+                                        <div>Community</div>
+                                        <div>Specifications</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    </nav>
-                
                 </div>
+                </nav>
+            
+            </div>
+
+            <script>
+                const burgerMenu = document.getElementById('burgerScript');
+                const burgerList = document.querySelector('.burgerListWrapper');
+
+                burgerMenu.addEventListener('click', function() {
+                    burgerList.classList.toggle('showBurgerListWrapper');
+                    burgerMenu.classList.toggle('activeBurger');
+                    });
+            </script>
+
 </header>
 <div class="separator-greenLine"> <section id="home-why" data-section="home-why">
 
