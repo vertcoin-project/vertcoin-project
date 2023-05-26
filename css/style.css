@@ -2608,6 +2608,37 @@ section.separator-greenLine:before {
     }
 }
 
+.burgerMenuAndButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-right: 32px;
+}
+
+.burgerMenu :hover{
+    cursor: pointer;
+    background-color: #048652;
+}
+
+.burgerList {
+    text-align: left;
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #121212;
+    padding: 8px 12px 8px 4px;
+}
+
+.hideDesktopNav {}
+
+@media screen and (width > 767px) and (width < 1080px) {
+    .hideDesktopNav {
+        display: none;
+    }
+}
 
 
 
