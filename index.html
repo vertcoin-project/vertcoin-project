@@ -129,15 +129,23 @@
                     <li><a href="http://discord.gg/vertcoin"><img src="./images/discord_grey.svg"></a></li>
                     </ul>
                     <div class="burgerMenuAndButtonContainer">
-                        <a class="downloadButton hideMobile" href="/download-wallet">Download Wallet</a>
-                        <div class="hideMobile">
+                        <div class="downloadButtonContainer">
+                            <a class="downloadButton hideMobile" href="/download-wallet">Download Wallet</a>
+                        </div>
+                    
+                        <div id="burgerMenuContainerScript" class="hideMobile burgerMenuContainer">
                             <div>
                                 <div id="burgerScript" class="burgerMenu">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
-                                        viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                                    </svg>
+                                    <div class="burgerFlex">
+                                        <div>
+                                            Menu
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                            class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                        </svg>
+                                    </div>
                                 </div>
                                 <div class="burgerListWrapper">
                                     <div class="burgerList">
@@ -145,6 +153,10 @@
                                         <div>Bitcoin Comparison</div>
                                         <div>Community</div>
                                         <div>Specifications</div>
+                                        <div class="discordWrapper">
+                                            <div><img src="./images/discord_grey.svg" /></div>
+                                            <div>Discord</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -157,10 +169,12 @@
             <script>
                 const burgerMenu = document.getElementById('burgerScript');
                 const burgerList = document.querySelector('.burgerListWrapper');
+                const burgerContainer = document.getElementById('burgerMenuContainerScript');
 
                 burgerMenu.addEventListener('click', function() {
                     burgerList.classList.toggle('showBurgerListWrapper');
                     burgerMenu.classList.toggle('activeBurger');
+                    burgerContainer.classList.toggle('activeBurgerContainer');
                     });
             </script>
 
