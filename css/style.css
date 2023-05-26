@@ -1940,10 +1940,10 @@ h4 svg {
 }
 
 @media screen and (max-width: 767px) {
-    .navbar-brand svg {
+    .navbar-brand {
         text-align: center;
         margin: 0 auto;
-        margin-top: -2px;
+        margin-top: -8px;
     }
 
 }
@@ -2622,6 +2622,7 @@ section.separator-greenLine:before {
 .burgerMenuContainer {
     position: relative;
     z-index: 9999;
+    display: block;
 }
 
 .burgerMenuContainer.activeBurgerContainer {
@@ -2718,21 +2719,18 @@ background-color: #121212;
     cursor: pointer;
 }
 
-@keyframes fadeIn {
-    from {
-      opacity: 0; /* Animation starts with opacity set to 0 */
-    }
-  
-    to {
-      opacity: 1; /* Animation ends with opacity set to 1 */
-    }
-  }
-
 
 .hideDesktopNav {}
 
-@media screen and (width > 767px) and (width < 1080px) {
+@media screen and (width > 767px) and (width <= 1080px) {
     .hideDesktopNav {
+        display: none;
+    }
+
+}
+
+@media screen and (width > 1080px) {
+    .burgerMenuContainer {
         display: none;
     }
 }
