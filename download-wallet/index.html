@@ -115,7 +115,7 @@
                 <a class="js-fh5co-nav-toggle fh5co-language-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav mainNav">
+                <ul class="nav navbar-nav mainNav hideMobile hideDesktopNav">
 
                     
                     <li><a href="../mining-setup">Mining Setup</a></li>
@@ -133,15 +133,57 @@
 
             </div>
             <div>
-                <ul class="mobileNav hideDesktop">
-                    <li><a href="../mining-setup/">Mining Setup</a></li>
-                    <li><a href="../community/">Community</a></li>
-                    <li><a href="http://discord.gg/vertcoin"><img src="../images/discord_grey.svg"></a></li>
-                </ul>
-                <a class="downloadButton hideMobile" href="/download-wallet">Download Wallet</a>
-        </nav>
-        
-    </div>
+                <div class="burgerMenuAndButtonContainer">
+                    <div class="downloadButtonContainer">
+                      <a class="downloadButton hideMobile" href="/download-wallet">Download Wallet</a>
+                    </div>
+                  
+                    <div id="burgerMenuContainerScript" class=" burgerMenuContainer">
+                      <div id="burgerScript" class="burgerMenu">
+                        <div class="burgerFlex">
+                          <div class="hideMobile">
+                            Menu
+                          </div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="burgerListWrapper">
+                        <div class="burgerList">
+                          <a href="../mining-setup/">Mining Setup</a>
+                          <a href="../bitcoin-vs-vertcoin">Bitcoin Comparison</a>
+                          <a href="../community/">Community</a>
+                          <a href="../specs-explained">Specifications</a>
+                          <a class="downloadButtonListWrapper" href="/download-wallet">
+                            <div class="downloadButtonList">
+                              <div>Download</div>
+                              <div>Wallet</div>
+                            </div>
+                          </a> <a class="discordWrapper" href="http://discord.gg/vertcoin">
+                            <div><img src="../images/discord_grey.svg" /></div>
+                            <div>Discord</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </nav>
+
+                </div>
+<script>
+    const burgerMenu = document.getElementById('burgerScript');
+    const burgerList = document.querySelector('.burgerListWrapper');
+    const burgerContainer = document.getElementById('burgerMenuContainerScript');
+  
+    burgerMenu.addEventListener('click', function() {
+        burgerList.classList.toggle('showBurgerListWrapper');
+        burgerMenu.classList.toggle('activeBurger');
+        burgerContainer.classList.toggle('activeBurgerContainer');
+        });
+  </script>
 </header>
 
     
